@@ -115,7 +115,7 @@
             ]
           },
           {
-            "name": "Intel Curie Boards",
+            "name": "Intel Curie Boards test",
             "version": "1.0.4",
             "category": "Arduino Certified",
             "architecture": "arc32",
