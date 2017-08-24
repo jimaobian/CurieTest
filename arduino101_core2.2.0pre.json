@@ -2,7 +2,7 @@
     "packages": [
       {
         "name": "Intel-Test",
-        "maintainer": "Intel",
+        "maintainer": "Angelo",
         "websiteURL": "https://www.arduino.cc/en/Main/ArduinoBoard101",
         "email": "support@intel.com",
         "help": {
@@ -10,9 +10,9 @@
         },
         "platforms": [
             {
-                "name": "Intel Curie Boards (Test)",
+                "name": "Intel Curie Boards Test",
                 "architecture": "arc32",
-                "version": "2.0.0",
+                "version": "2.2.0",
                 "category": "Contributed",
                 "help": {
                   "online": "https://www.arduino.cc/en/Main/ArduinoBoard101"
@@ -21,7 +21,7 @@
                 "archiveFileName": "2.2.0.zip",
                 "boards": [
                     {
-                        "name": "Arduino/Genuino 101(Test)"
+                        "name": "Arduino/Genuino 101 Test "
                     }
                 ],
                 "checksum": "SHA-256:2e4545b426e9653db5e3703f2770149f473eb5326b5e458fdf864cec5981749b",
