@@ -1,234 +1,156 @@
 {
-  "packages": [
-    {
-      "name": "sandeepmistry",
-      "maintainer": "Sandeep Mistry",
-      "websiteURL": "https://github.com/sandeepmistry/arduino-nRF5",
-      "email": "sandeep.mistry@gmail.com",
-      "help": {
-        "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
-      },
-      "platforms": [
-        {
-          "name": "Nordic Semiconductor nRF5 Boards",
-          "architecture": "nRF5",
-          "version": "0.1.0",
-          "category": "Contributed",
-          "help": {
-            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
-          },
-          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.1.0.tar.gz",
-          "archiveFileName": "arduino-nRF52-0.1.0.tar.gz",
-          "checksum": "MD5:1825f6420104225f5fee11b467923b7d",
-          "size": "591297",
-          "boards": [
-            {"name": "nRF52 DK"},
-            {"name": "Bluz DK"}
-          ],
-          "toolsDependencies": [
+    "packages": {
+        "maintainer": "Intel",
+        "name": "Intel-Test",
+        "websiteURL": "https://www.arduino.cc/en/Main/ArduinoBoard101",
+        "platforms": [
             {
-              "packager": "sandeepmistry",
-              "name": "gcc-arm-none-eabi",
-              "version": "5_2-2015q4"
-            },
-            {
-              "packager": "sandeepmistry",
-              "name": "openocd",
-              "version": "0.10.0-dev.nrf5"
+                "category": "Arduino Certified",
+                "version": "2.0.0",
+                "name": "Intel Curie Boards (Test)",
+                "archiveFileName": "2.2.0.zip",
+                "boards": [
+                    {
+                        "name": "Arduino/Genuino 101"
+                    }
+                ],
+                "url": "https://github.com/01org/corelibs-arduino101/archive/2.2.0.zip",
+                "checksum": "SHA-256:2e4545b426e9653db5e3703f2770149f473eb5326b5e458fdf864cec5981749b",
+                "size": 6293278,
+                "toolsDependencies": [
+                    {
+                        "packager": "Intel",
+                        "version": "2.0.0",
+                        "name": "arduino101load"
+                    },
+                    {
+                        "packager": "arduino",
+                        "version": "0.9.0-arduino1",
+                        "name": "dfu-util"
+                    },
+                    {
+                        "packager": "Intel-Test",
+                        "version": "1.6.9+1.0.1",
+                        "name": "arc-elf32"
+                    },
+                    {
+                        "packager": "Intel-Test",
+                        "version": "0.9+0.1",
+                        "name": "openocd"
+                    },
+                    {
+                        "packager": "Intel-Test",
+                        "version": "2.0.0",
+                        "name": "flashpack"
+                    }
+                ],
+                "architecture": "arc32"
             }
-          ]
-        },
-        {
-          "name": "Nordic Semiconductor nRF5 Boards",
-          "architecture": "nRF5",
-          "version": "0.2.0",
-          "category": "Contributed",
-          "help": {
-            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
-          },
-          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.2.0.tar.gz",
-          "archiveFileName": "arduino-nRF52-0.2.0.tar.gz",
-          "checksum": "MD5:1ed95ee9030e4ca1371665258a3cdee4",
-          "size": "562847",
-          "boards": [
-            {"name": "nRF52 DK"},
-            {"name": "Bluz DK"},
-            {"name": "RedBearLab BLE Nano"},
-            {"name": "RedBearLab nRF51822"},
-            {"name": "BBC micro:bit"},
-            {"name": "OSHChip"},
-            {"name": "Generic nRF51822"}
-          ],
-          "toolsDependencies": [
+        ],
+        "tools": [
             {
-              "packager": "sandeepmistry",
-              "name": "gcc-arm-none-eabi",
-              "version": "5_2-2015q4"
+                "version": "1.6.9+1.0.1",
+                "name": "arc-elf32",
+                "systems": [
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-windows-arcem-1.0.1.zip",
+                        "checksum": "SHA-256:59614534473a55b1d964e1f4fa14f5e01e6aaa426d1e8319a8293ffa6576f58e",
+                        "host": "i686-mingw32",
+                        "archiveFileName": "arc-toolchain-windows-arcem-1.0.1.zip",
+                        "size": 172455793
+                    },
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-osx-arcem-1.0.1.tar.bz2",
+                        "checksum": "SHA-256:456995157cf1549073b9330a114abb25f056352278c107e25b3cc79443040a44",
+                        "host": "i386-apple-darwin11",
+                        "archiveFileName": "arc-toolchain-osx-arcem-1.0.1.tar.bz2",
+                        "size": 30014953
+                    },
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux32-arcem-1.0.1.tar.bz2",
+                        "checksum": "SHA-256:6aa92f239998d10992592cc16a16352bb1cce75a6bff1c72b8be18d939182915",
+                        "host": "i686-linux-gnu",
+                        "archiveFileName": "arc-toolchain-linux32-arcem-1.0.1.tar.bz2",
+                        "size": 116481978
+                    },
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux64-arcem-1.0.1.tar.bz2",
+                        "checksum": "SHA-256:0ee03cecc27471eae58cb557a105c5edaea45b49557c86867fa436a13681392c",
+                        "host": "x86_64-linux-gnu",
+                        "archiveFileName": "arc-toolchain-linux64-arcem-1.0.1.tar.bz2",
+                        "size": 129250679
+                    }
+                ]
             },
             {
-              "packager": "sandeepmistry",
-              "name": "openocd",
-              "version": "0.10.0-dev.nrf5"
+                "version": "0.9+0.1",
+                "name": "openocd",
+                "systems": [
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-windows.zip",
+                        "checksum": "SHA-256:95accfa22294cf150f33fba3cac45e6aa6857ebc2ba5dacebc2963b4a6021962",
+                        "host": "i686-mingw32",
+                        "archiveFileName": "openocd-windows.zip",
+                        "size": 9181935
+                    },
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-osx.tar.bz2",
+                        "checksum": "SHA-256:57083e887ba77826a5f532f4b1ca4b7390cb7a2e2744583576a72f28a77dcc44",
+                        "host": "i386-apple-darwin11",
+                        "archiveFileName": "openocd-osx.tar.bz2",
+                        "size": 896625
+                    },
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-linux32.tar.bz2",
+                        "checksum": "SHA-256:49d2a220e4b25eead4fe03d2ffa339ed946abef9cb718debdc7369f7b3c70534",
+                        "host": "i686-linux-gnu",
+                        "archiveFileName": "openocd-linux32.tar.bz2",
+                        "size": 3923308
+                    },
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-linux64.tar.bz2",
+                        "checksum": "SHA-256:4df6d3d387b45fa6214145f736c48c95109871fcd85fa81b81c01b533097a031",
+                        "host": "x86_64-linux-gnu",
+                        "archiveFileName": "openocd-linux64.tar.bz2",
+                        "size": 4010990
+                    }
+                ]
+            },
+            {
+                "version": "2.0.0",
+                "name": "flashpack",
+                "systems": [
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "i686-mingw32",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": 678394
+                    },
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "i386-apple-darwin11",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": 678394
+                    },
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "i686-linux-gnu",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": 678394
+                    },
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "x86_64-linux-gnu",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": 678394
+                    }
+                ]
             }
-          ]
-        },
-        {
-          "name": "Nordic Semiconductor nRF5 Boards",
-          "architecture": "nRF5",
-          "version": "0.3.0",
-          "category": "Contributed",
-          "help": {
-            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
-          },
-          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.3.0.tar.gz",
-          "archiveFileName": "arduino-nRF52-0.3.0.tar.gz",
-          "checksum": "MD5:3308f42e982e96a7f4329524ef46f5f8",
-          "size": "569306",
-          "boards": [
-            {"name": "BBC micro:bit"},
-            {"name": "Bluz DK"},
-            {"name": "Generic nRF51822"},
-            {"name": "Generic nRF52823"},
-            {"name": "OSHChip"},
-            {"name": "ng-beacon"},
-            {"name": "nRF51 Dongle"},
-            {"name": "nRF51822 Development Kit"},
-            {"name": "nRF52 DK"},
-            {"name": "RedBear BLE Nano 2"},
-            {"name": "RedBear Blend 2"},
-            {"name": "RedBearLab BLE Nano"},
-            {"name": "RedBearLab nRF51822"},
-            {"name": "Waveshare BLE400"}
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "sandeepmistry",
-              "name": "gcc-arm-none-eabi",
-              "version": "5_2-2015q4"
-            },
-            {
-              "packager": "sandeepmistry",
-              "name": "openocd",
-              "version": "0.10.0-dev.nrf5"
-            }
-          ]
-        },
-        {
-          "name": "Nordic Semiconductor nRF5 Boards",
-          "architecture": "nRF5",
-          "version": "0.4.0",
-          "category": "Contributed",
-          "help": {
-            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
-          },
-          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.4.0.tar.gz",
-          "archiveFileName": "arduino-nRF52-0.4.0.tar.gz",
-          "checksum": "MD5:E82DA39642AB48492A9FEDE8159871F5",
-          "size": "573440",
-          "boards": [
-            {"name": "BBC micro:bit"},
-            {"name": "Bluz DK"},
-            {"name": "Electronut labs bluey"},
-            {"name": "Generic nRF51822"},
-            {"name": "Generic nRF52823"},
-            {"name": "OSHChip"},
-            {"name": "ng-beacon"},
-            {"name": "nRF51 Dongle"},
-            {"name": "nRF51822 Development Kit"},
-            {"name": "nRF52 DK"},
-            {"name": "Nordic Beacon Kit"},
-            {"name": "RedBear BLE Nano 2"},
-            {"name": "RedBear Blend 2"},
-            {"name": "RedBearLab BLE Nano"},
-            {"name": "RedBearLab nRF51822"},
-            {"name": "Taida Century nRF52 mini board"},
-            {"name": "TinyBLE"},
-            {"name": "Waveshare BLE400"}
-          ],
-          "toolsDependencies": [
-            {
-              "packager": "sandeepmistry",
-              "name": "gcc-arm-none-eabi",
-              "version": "5_2-2015q4"
-            },
-            {
-              "packager": "sandeepmistry",
-              "name": "openocd",
-              "version": "0.10.0-dev.nrf5"
-            }
-          ]
-        }
-      ],
-      "tools":[
-        {
-          "name": "gcc-arm-none-eabi",
-          "version": "5_2-2015q4",
-          "systems": [
-            {
-              "host": "i386-apple-darwin11",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2",
-              "size": "96372129",
-              "checksum": "MD5:603bcce8e59683ac27054b3197a53254"
-            },
-            {
-              "host": "i686-linux-gnu",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "size": "92811866",
-              "checksum": "MD5:f88caac80b4444a17344f57ccb760b90"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
-              "size": "92811866",
-              "checksum": "MD5:f88caac80b4444a17344f57ccb760b90"
-            },
-            {
-              "host": "i686-mingw32",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2",
-              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2",
-              "size": "102981732",
-              "checksum": "MD5:32d950225b6c7c886f6225c1fc578934"
-            }
-          ]
-        },
-        {
-          "name": "openocd",
-          "version": "0.10.0-dev.nrf5",
-          "systems": [
-            {
-              "host": "i386-apple-darwin11",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-osx-0.10.0-dev-nrf5.tar.gz",
-              "archiveFileName": "openocd-osx-0.10.0-dev-nrf5.tar.gz",
-              "size": "1345243",
-              "checksum": "MD5:3ffaa4e7cd4b96770eec65002c5959e3"
-            },
-            {
-              "host": "i686-linux-gnu",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
-              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz",
-              "size": "3585042",
-              "checksum": "MD5:02b3f4a3004cae86631bf13837c84504"
-            },
-            {
-              "host": "x86_64-pc-linux-gnu",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
-              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz",
-              "size": "3585042",
-              "checksum": "MD5:02b3f4a3004cae86631bf13837c84504"
-            },
-            {
-              "host": "i686-mingw32",
-              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-win32-0.10.0-dev-nrf5.tar.gz",
-              "archiveFileName": "openocd-win32-0.10.0-dev-nrf5.tar.gz",
-              "size": "5498373",
-              "checksum": "MD5:3acd3b08afda2bb09e75a0de5ac7c3cd"
-            }
-          ]
-        }
-      ]
+        ],
+        "email": "support@intel.com"
     }
-  ]
 }
