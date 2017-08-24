@@ -1,0 +1,165 @@
+{
+    "packages": [
+      {
+        "name": "Intel-Test",
+        "maintainer": "Intel",
+        "websiteURL": "https://www.arduino.cc/en/Main/ArduinoBoard101",
+        "email": "support@intel.com",
+        "help": {
+          "online": "https://www.arduino.cc/en/Main/ArduinoBoard101"
+        },
+        "platforms": [
+            {
+                "name": "Intel Curie Boards (Test)",
+                "architecture": "arc32",
+                "version": "2.0.0",
+                "category": "Contributed",
+                "help": {
+                  "online": "https://www.arduino.cc/en/Main/ArduinoBoard101"
+                },
+                "url": "https://github.com/01org/corelibs-arduino101/archive/2.2.0.zip",
+                "archiveFileName": "2.2.0.zip",
+                "boards": [
+                    {
+                        "name": "Arduino/Genuino 101(Test)"
+                    }
+                ],
+                "checksum": "SHA-256:2e4545b426e9653db5e3703f2770149f473eb5326b5e458fdf864cec5981749b",
+                "size": "6293278",
+                "toolsDependencies": [
+                    {
+                        "packager": "Intel",
+                        "version": "2.0.1",
+                        "name": "arduino101load"
+                    },
+                    {
+                        "packager": "arduino",
+                        "version": "0.9.0-arduino1",
+                        "name": "dfu-util"
+                    },
+                    {
+                        "packager": "Intel-Test",
+                        "version": "1.6.9+1.0.1",
+                        "name": "arc-elf32"
+                    },
+                    {
+                        "packager": "Intel-Test",
+                        "version": "0.9+0.1",
+                        "name": "openocd"
+                    },
+                    {
+                        "packager": "Intel-Test",
+                        "version": "2.0.0",
+                        "name": "flashpack"
+                    }
+                ]
+
+            }
+        ],
+        "tools": [
+            {
+                "version": "1.6.9+1.0.1",
+                "name": "arc-elf32",
+                "systems": [
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-windows-arcem-1.0.1.zip",
+                        "checksum": "SHA-256:59614534473a55b1d964e1f4fa14f5e01e6aaa426d1e8319a8293ffa6576f58e",
+                        "host": "i686-mingw32",
+                        "archiveFileName": "arc-toolchain-windows-arcem-1.0.1.zip",
+                        "size": "172455793"
+                    },
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-osx-arcem-1.0.1.tar.bz2",
+                        "checksum": "SHA-256:456995157cf1549073b9330a114abb25f056352278c107e25b3cc79443040a44",
+                        "host": "i386-apple-darwin11",
+                        "archiveFileName": "arc-toolchain-osx-arcem-1.0.1.tar.bz2",
+                        "size": "30014953"
+                    },
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux32-arcem-1.0.1.tar.bz2",
+                        "checksum": "SHA-256:6aa92f239998d10992592cc16a16352bb1cce75a6bff1c72b8be18d939182915",
+                        "host": "i686-linux-gnu",
+                        "archiveFileName": "arc-toolchain-linux32-arcem-1.0.1.tar.bz2",
+                        "size": "116481978"
+                    },
+                    {
+                        "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux64-arcem-1.0.1.tar.bz2",
+                        "checksum": "SHA-256:0ee03cecc27471eae58cb557a105c5edaea45b49557c86867fa436a13681392c",
+                        "host": "x86_64-linux-gnu",
+                        "archiveFileName": "arc-toolchain-linux64-arcem-1.0.1.tar.bz2",
+                        "size": "129250679"
+                    }
+                ]
+            },
+            {
+                "version": "0.9+0.1",
+                "name": "openocd",
+                "systems": [
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-windows.zip",
+                        "checksum": "SHA-256:95accfa22294cf150f33fba3cac45e6aa6857ebc2ba5dacebc2963b4a6021962",
+                        "host": "i686-mingw32",
+                        "archiveFileName": "openocd-windows.zip",
+                        "size": "9181935"
+                    },
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-osx.tar.bz2",
+                        "checksum": "SHA-256:57083e887ba77826a5f532f4b1ca4b7390cb7a2e2744583576a72f28a77dcc44",
+                        "host": "i386-apple-darwin11",
+                        "archiveFileName": "openocd-osx.tar.bz2",
+                        "size": "896625"
+                    },
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-linux32.tar.bz2",
+                        "checksum": "SHA-256:49d2a220e4b25eead4fe03d2ffa339ed946abef9cb718debdc7369f7b3c70534",
+                        "host": "i686-linux-gnu",
+                        "archiveFileName": "openocd-linux32.tar.bz2",
+                        "size": "3923308"
+                    },
+                    {
+                        "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-linux64.tar.bz2",
+                        "checksum": "SHA-256:4df6d3d387b45fa6214145f736c48c95109871fcd85fa81b81c01b533097a031",
+                        "host": "x86_64-linux-gnu",
+                        "archiveFileName": "openocd-linux64.tar.bz2",
+                        "size": "4010990"
+                    }
+                ]
+            },
+            {
+                "version": "2.0.0",
+                "name": "flashpack",
+                "systems": [
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "i686-mingw32",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": "678394"
+                    },
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "i386-apple-darwin11",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": "678394"
+                    },
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "i686-linux-gnu",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": "678394"
+                    },
+                    {
+                        "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
+                        "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
+                        "host": "x86_64-linux-gnu",
+                        "archiveFileName": "flashpack_ble_v3.tar.bz2",
+                        "size": "678394"
+                    }
+                ]
+            }
+        ]
+    }
+  ]
+}
