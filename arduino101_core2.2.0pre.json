@@ -1,813 +1,234 @@
 {
-    "packages": [
-      {
-        "email": "support@intel.com",
-        "maintainer": "Intel",
-        "websiteURL": "http://maker.intel.com/",
-        "name": "Intel-Test",
-        "platforms": [
-          {
-            "name": "Intel i586 Boards",
-            "version": "1.6.2+1.0",
-            "category": "Arduino Certified",
-            "architecture": "i586",
-            "url": "https://github.com/01org/corelibs-galileo/archive/1.6.2+1.0.tar.gz",
-            "archiveFileName": "corelibs-galileo-1.6.2.tar.gz",
-            "checksum": "SHA-256:e20d62b0dccf0d68dbb61d70b866d77134b770b226d6046a61c7e8d55e64e53a",
-            "size": "272961",
-            "boards": [
-              {
-                "name": "Galileo"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "name": "i586-poky-linux-uclibc",
-                "version": "1.6.2+1.0"
-              },
-              {
-                "packager": "Intel",
-                "name": "sketchUploader",
-                "version": "1.6.2+1.0"
-              }
-            ]
+  "packages": [
+    {
+      "name": "sandeepmistry",
+      "maintainer": "Sandeep Mistry",
+      "websiteURL": "https://github.com/sandeepmistry/arduino-nRF5",
+      "email": "sandeep.mistry@gmail.com",
+      "help": {
+        "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
+      },
+      "platforms": [
+        {
+          "name": "Nordic Semiconductor nRF5 Boards",
+          "architecture": "nRF5",
+          "version": "0.1.0",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
           },
-          {
-            "name": "Intel i686 Boards",
-            "version": "1.6.2+1.0",
-            "category": "Arduino Certified",
-            "architecture": "i686",
-            "url": "https://github.com/01org/corelibs-edison/archive/1.6.2+1.0.tar.gz",
-            "archiveFileName": "corelibs-edison-1.6.2.tar.gz",
-            "checksum": "SHA-256:538ab8553f832f56b04df80d44992ecc994b9c296f3fce6902832d97f99811a8",
-            "size": "271420",
-            "boards": [
-              {
-                "name": "Edison"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "name": "core2-32-poky-linux",
-                "version": "1.6.2+1.0"
-              },
-              {
-                "packager": "Intel",
-                "name": "sketchUploader",
-                "version": "1.6.2+1.0"
-              }
-            ]
+          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.1.0.tar.gz",
+          "archiveFileName": "arduino-nRF52-0.1.0.tar.gz",
+          "checksum": "MD5:1825f6420104225f5fee11b467923b7d",
+          "size": "591297",
+          "boards": [
+            {"name": "nRF52 DK"},
+            {"name": "Bluz DK"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "sandeepmistry",
+              "name": "gcc-arm-none-eabi",
+              "version": "5_2-2015q4"
+            },
+            {
+              "packager": "sandeepmistry",
+              "name": "openocd",
+              "version": "0.10.0-dev.nrf5"
+            }
+          ]
+        },
+        {
+          "name": "Nordic Semiconductor nRF5 Boards",
+          "architecture": "nRF5",
+          "version": "0.2.0",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
           },
-          {
-            "name": "Intel i586 Boards",
-            "version": "1.6.7+1.0",
-            "category": "Arduino Certified",
-            "architecture": "i586",
-            "url": "https://github.com/01org/corelibs-galileo/archive/1.6.7+1.0.tar.gz",
-            "archiveFileName": "corelibs-galileo-1.6.7.tar.gz",
-            "checksum": "SHA-256:4d161dde4c95ef8ebc264ca444ee6d1baaee70f9fd416e5f234f3f5cdd4ee028",
-            "size": "273392",
-            "boards": [
-              {
-                "name": "Galileo"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "name": "i586-poky-linux-uclibc",
-                "version": "1.6.2+1.0"
-              },
-              {
-                "packager": "Intel",
-                "name": "sketchUploader",
-                "version": "1.6.2+1.0"
-              }
-            ]
+          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.2.0.tar.gz",
+          "archiveFileName": "arduino-nRF52-0.2.0.tar.gz",
+          "checksum": "MD5:1ed95ee9030e4ca1371665258a3cdee4",
+          "size": "562847",
+          "boards": [
+            {"name": "nRF52 DK"},
+            {"name": "Bluz DK"},
+            {"name": "RedBearLab BLE Nano"},
+            {"name": "RedBearLab nRF51822"},
+            {"name": "BBC micro:bit"},
+            {"name": "OSHChip"},
+            {"name": "Generic nRF51822"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "sandeepmistry",
+              "name": "gcc-arm-none-eabi",
+              "version": "5_2-2015q4"
+            },
+            {
+              "packager": "sandeepmistry",
+              "name": "openocd",
+              "version": "0.10.0-dev.nrf5"
+            }
+          ]
+        },
+        {
+          "name": "Nordic Semiconductor nRF5 Boards",
+          "architecture": "nRF5",
+          "version": "0.3.0",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
           },
-          {
-            "name": "Intel i686 Boards",
-            "version": "1.6.7+1.0",
-            "category": "Arduino Certified",
-            "architecture": "i686",
-            "url": "https://github.com/01org/corelibs-edison/archive/1.6.7+1.0.tar.gz",
-            "archiveFileName": "corelibs-edison-1.6.7.tar.gz",
-            "checksum": "SHA-256:2b630b4986c4c7543946eef339ab8d08ed23d28aa6428d27f5b464ad2331a3f1",
-            "size": "272002",
-            "boards": [
-              {
-                "name": "Edison"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "name": "core2-32-poky-linux",
-                "version": "1.6.2+1.0"
-              },
-              {
-                "packager": "Intel",
-                "name": "sketchUploader",
-                "version": "1.6.2+1.0"
-              }
-            ]
+          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.3.0.tar.gz",
+          "archiveFileName": "arduino-nRF52-0.3.0.tar.gz",
+          "checksum": "MD5:3308f42e982e96a7f4329524ef46f5f8",
+          "size": "569306",
+          "boards": [
+            {"name": "BBC micro:bit"},
+            {"name": "Bluz DK"},
+            {"name": "Generic nRF51822"},
+            {"name": "Generic nRF52823"},
+            {"name": "OSHChip"},
+            {"name": "ng-beacon"},
+            {"name": "nRF51 Dongle"},
+            {"name": "nRF51822 Development Kit"},
+            {"name": "nRF52 DK"},
+            {"name": "RedBear BLE Nano 2"},
+            {"name": "RedBear Blend 2"},
+            {"name": "RedBearLab BLE Nano"},
+            {"name": "RedBearLab nRF51822"},
+            {"name": "Waveshare BLE400"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "sandeepmistry",
+              "name": "gcc-arm-none-eabi",
+              "version": "5_2-2015q4"
+            },
+            {
+              "packager": "sandeepmistry",
+              "name": "openocd",
+              "version": "0.10.0-dev.nrf5"
+            }
+          ]
+        },
+        {
+          "name": "Nordic Semiconductor nRF5 Boards",
+          "architecture": "nRF5",
+          "version": "0.4.0",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/sandeepmistry/arduino-nRF5/issues"
           },
-          {
-            "name": "Intel Curie Boards test",
-            "version": "1.0.4",
-            "category": "Arduino Certified",
-            "architecture": "arc32",
-            "url": "https://github.com/01org/corelibs-arduino101/archive/1.6.4+1.59.zip",
-            "archiveFileName": "arduino101-1.0.4.zip",
-            "checksum": "SHA-256:af0a3f4dac320892de6f7c93429a70bf9a5d9ecf742047e3365f8132dc2b2faa",
-            "size": "807984",
-            "boards": [
-              {
-                "name": "Arduino 101"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "version": "1.6.4+1.0",
-                "name": "arc-elf32"
-              },
-              {
-                "packager": "Intel",
-                "version": "1.6.4+1.14",
-                "name": "sketchUploader"
-              }
-            ]
-          },
-          {
-            "name": "Intel Curie Boards",
-            "version": "1.0.5",
-            "category": "Arduino Certified",
-            "architecture": "arc32",
-            "url": "https://github.com/01org/corelibs-arduino101/archive/1.6.4+1.68.zip",
-            "archiveFileName": "arduino101-1.0.5.zip",
-            "checksum": "SHA-256:741c970190d67401a0045c1c4929dc30ca1fd58e076c567e66d2de2bf1d77419",
-            "size": "778432",
-            "boards": [
-              {
-                "name": "Arduino/Genuino 101"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "version": "1.6.4+1.0",
-                "name": "arc-elf32"
-              },
-              {
-                "packager": "Intel",
-                "version": "1.6.4+1.18",
-                "name": "arduino101load"
-              }
-            ]
-          },
-          {
-            "name": "Intel Curie Boards",
-            "version": "1.0.6",
-            "category": "Arduino Certified",
-            "archiveFileName": "arduino101-1.0.6.zip",
-            "architecture": "arc32",
-            "url": "https://github.com/01org/corelibs-arduino101/archive/1.6.9+1.74.zip",
-            "checksum": "SHA-256:c3d34679c18b34411bcfd55e09d3403ff372ff1ca1c6dcd26ec6b08f2b88fd7f",
-            "size": "673874",
-            "boards": [
-              {
-                "name": "Arduino/Genuino 101"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "version": "1.6.9+1.0.1",
-                "name": "arc-elf32"
-              },
-              {
-                "packager": "Intel",
-                "version": "1.6.9+1.24",
-                "name": "arduino101load"
-              }
-            ]
-          },
-          {
-            "name": "Intel Curie Boards",
-            "version": "1.0.7",
-            "category": "Arduino Certified",
-            "archiveFileName": "arduino101-1.0.7.zip",
-            "architecture": "arc32",
-            "url": "https://github.com/01org/corelibs-arduino101/archive/1.6.11+1.83.zip",
-            "checksum": "SHA-256:cf55b718d26bcfac78a325c2b5558e1ee978a3f7de127b1571b2c5244bbd8df8",
-            "size": "730897",
-            "boards": [
-              {
-                "name": "Arduino/Genuino 101"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "version": "1.6.9+1.0.1",
-                "name": "arc-elf32"
-              },
-              {
-                "packager": "Intel",
-                "version": "1.6.9+1.28",
-                "name": "arduino101load"
-              },
-              {
-                "packager": "Intel",
-                "version": "0.9.0+0.1",
-                "name": "openocd"
-              },
-              {
-                "packager": "Intel",
-                "version": "1.0.0",
-                "name": "flashpack"
-              }
-            ]
-          },
-          {
-            "name": "Intel Curie Boards",
-            "version": "2.0.2",
-            "category": "Arduino Certified",
-            "archiveFileName": "corelibs-arduino101-2.0.2.zip",
-            "architecture": "arc32",
-            "url": "https://github.com/01org/corelibs-arduino101/archive/2.0.2.zip",
-            "checksum": "SHA-256:cc81c46b5da7d7ec94e672f1cca509b03827828c60435d75eb60e7b9ba9da253",
-            "size": "6244732",
-            "boards": [
-              {
-                "name": "Arduino/Genuino 101"
-              }
-            ],
-            "toolsDependencies": [
-              {
-                "packager": "Intel",
-                "version": "2.0.1",
-                "name": "arduino101load"
-              },
-              {
-                "packager": "arduino",
-                "version": "0.9.0-arduino1",
-                "name": "dfu-util"
-              },
-              {
-                "packager": "Intel",
-                "version": "1.6.9+1.0.1",
-                "name": "arc-elf32"
-              },
-              {
-                "packager": "Intel",
-                "version": "0.9.0+0.1",
-                "name": "openocd"
-              },
-              {
-                "packager": "Intel",
-                "version": "2.0.0",
-                "name": "flashpack"
-              }
-            ]
-          }
-        ],
-        "tools": [
-          {
-            "name": "i586-poky-linux-uclibc",
-            "version": "1.6.2+1.0",
-            "systems": [
-              {
-                "size": "30587705",
-                "checksum": "SHA-256:5b705d26dc1d8ca8953df6e0c08dcc8584d5be77b584d561f631360fd166677c",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "galileo-toolchain-20150323-osx.tar.bz2",
-                "url": "http://downloadmirror.intel.com/24806/eng/galileo-toolchain-osx-1.6.2-1.0.tar.bz2"
-              },
-              {
-                "size": "45948648",
-                "checksum": "SHA-256:821eb290d7c668c1caa74da30903c13843edc746d41508b35161622ae6279b56",
-                "host": "i686-mingw32",
-                "archiveFileName": "galileo-toolchain-20150323-windows.zip",
-                "url": "http://downloadmirror.intel.com/24806/eng/galileo-toolchain-windows-1.6.2-1.0.zip"
-              },
-              {
-                "size": "56227185",
-                "checksum": "SHA-256:935ccad3eaaec34f5de76eceb0f0ecd1372bdab0b7dc8f4241e8260c6f827b72",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "galileo-toolchain-20150316-linux64.tar.bz2",
-                "url": "http://downloadmirror.intel.com/24806/eng/galileo-toolchain-linux64-1.6.2-1.0.tar.bz2"
-              },
-              {
-                "size": "55098166",
-                "checksum": "SHA-256:1dab7f21e10d0208a6dd2897c36c6f5f55f9372b947225d2b59c3c4ab4777d03",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "galileo-toolchain-20150316-linux32.tar.bz2",
-                "url": "http://downloadmirror.intel.com/24806/eng/galileo-toolchain-linux32-1.6.2-1.0.tar.bz2"
-              }
-            ]
-          },
-          {
-            "name": "core2-32-poky-linux",
-            "version": "1.6.2+1.0",
-            "systems": [
-              {
-                "size": "42720934",
-                "checksum": "SHA-256:fac0b3f00a33ee0531ea0da6d517c170409e25bd5e59f6f3db9506974336375d",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "edison-toolchain-20150323-osx.tar.bz2",
-                "url": "http://downloadmirror.intel.com/24806/eng/edison-toolchain-osx-1.6.2-1.0.tar.bz2"
-              },
-              {
-                "size": "56683094",
-                "checksum": "SHA-256:5a9a1b51f0fa18bf21e1dcf1332d34331dd435c5ca0d1fe008e68e13cb3255e5",
-                "host": "i686-mingw32",
-                "archiveFileName": "edison-toolchain-20150323-windows.zip",
-                "url": "http://downloadmirror.intel.com/24806/eng/edison-toolchain-windows-1.6.2-1.0.zip"
-              },
-              {
-                "size": "78998436",
-                "checksum": "SHA-256:e3443e7832732f2189fd424e4868d2ebb563e823addb2321a6e8a86a9fced193",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "edison-toolchain-20150316-linux64.tar.bz2",
-                "url": "http://downloadmirror.intel.com/24806/eng/edison-toolchain-linux64-1.6.2-1.0.tar.bz2"
-              },
-              {
-                "size": "76488215",
-                "checksum": "SHA-256:014d1bdc40bb080987c736d04ffd42cdc0d2c3cad001891fb01555dac04296f7",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "edison-toolchain-20150316-linux32.tar.bz2",
-                "url": "http://downloadmirror.intel.com/24806/eng/edison-toolchain-linux32-1.6.2-1.0.tar.bz2"
-              }
-            ]
-          },
-          {
-            "name": "arc-elf32",
-            "version": "1.6.4+1.0",
-            "systems": [
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-windows-arcem.zip",
-                "checksum": "SHA-256:d7a3700e8762c656da66b1f85967ef1992c2473cee5bfc06b23aacfef7867435",
-                "host": "i686-mingw32",
-                "archiveFileName": "arc-toolchain-windows-arcem.zip",
-                "size": "218816528"
-              },
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-osx-arcem.tar.bz2",
-                "checksum": "SHA-256:3818fbc4cfbb8bc826ae33f6869413463849a889e53b4e27da365f2489699ec1",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "arc-toolchain-osx-arcem.tar.bz2",
-                "size": "78371400"
-              },
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux32-arcem.tar.bz2",
-                "checksum": "SHA-256:cb49a8b6a2d55712a0750813d56f8271d712252907fcd82b0cf690321be0d663",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "arc-toolchain-linux32-arcem.tar.bz2",
-                "size": "182899676"
-              },
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux64-arcem.tar.bz2",
-                "checksum": "SHA-256:0b538ae361b02a6329e00a009962c3bad91c48b07c78bb6343ffc6c19475e1a8",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "arc-toolchain-linux64-arcem.tar.bz2",
-                "size": "177840353"
-              }
-            ]
-          },
-          {
-            "name": "arc-elf32",
-            "version": "1.6.9+1.0.1",
-            "systems": [
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-windows-arcem-1.0.1.zip",
-                "checksum": "SHA-256:59614534473a55b1d964e1f4fa14f5e01e6aaa426d1e8319a8293ffa6576f58e",
-                "host": "i686-mingw32",
-                "archiveFileName": "arc-toolchain-windows-arcem-1.0.1.zip",
-                "size": "172455793"
-              },
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-osx-arcem-1.0.1.tar.bz2",
-                "checksum": "SHA-256:456995157cf1549073b9330a114abb25f056352278c107e25b3cc79443040a44",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "arc-toolchain-osx-arcem-1.0.1.tar.bz2",
-                "size": "30014953"
-              },
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux32-arcem-1.0.1.tar.bz2",
-                "checksum": "SHA-256:6aa92f239998d10992592cc16a16352bb1cce75a6bff1c72b8be18d939182915",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "arc-toolchain-linux32-arcem-1.0.1.tar.bz2",
-                "size": "116481978"
-              },
-              {
-                "url": "https://downloadmirror.intel.com/25470/eng/arc-toolchain-linux64-arcem-1.0.1.tar.bz2",
-                "checksum": "SHA-256:0ee03cecc27471eae58cb557a105c5edaea45b49557c86867fa436a13681392c",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "arc-toolchain-linux64-arcem-1.0.1.tar.bz2",
-                "size": "129250679"
-              }
-              ]
-          },
-          {
-            "name": "sketchUploader",
-            "version": "1.6.2+1.0",
-            "systems": [
-              {
-                "size": "61789",
-                "checksum": "SHA-256:8395ccb57c627f997fe01170df4613de906f48c6ce99623b9ca42806079c28ad",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "intel-arduino-tools-20150316-osx.tar.gz",
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.2+1.0-osx.tar.gz"
-              },
-              {
-                "size": "2534586",
-                "checksum": "SHA-256:c32d1ae4cde190242eef95122d20dbcb5da226e7de6c567079a1c8c292267ae5",
-                "host": "i686-mingw32",
-                "archiveFileName": "intel-arduino-tools-20150316-windows.zip",
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.2+1.0-windows.zip"
-              },
-              {
-                "size": "178239",
-                "checksum": "SHA-256:2876db4153db22609d2f6c9c3bfb198efbb9d9574edad579aca7d58cff9d2cca",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "intel-arduino-tools-20150316-linux64.tar.gz",
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.2+1.0-linux64.tar.gz"
-              },
-              {
-                "size": "187995",
-                "checksum": "SHA-256:20d87602d0194be626f592d3f2bdc9566a5a897786b042393482ef4c26ae158c",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "intel-arduino-tools-20150316-linux32.tar.gz",
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.2+1.0-linux32.tar.gz"
-              }
-            ]
-          },
-          {
-            "version": "1.6.4+1.14",
-            "name": "sketchUploader",
-            "systems": [
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.14-windows.zip",
-                "checksum": "SHA-256:694cc2e85bca897f2c5bf867d16f11ae4e93134e329a08079a41a83fa9fd7beb",
-                "host": "i686-mingw32",
-                "archiveFileName": "1.6.4+1.14-windows.zip",
-                "size": "8239124"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.14-osx.tar.gz",
-                "checksum": "SHA-256:cd9c81e72667f42fca2047b12da330917607d2f2412772758d3b25565f61cb61",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "1.6.4+1.14-osx.tar.gz",
-                "size": "324645"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.14-linux32.tar.gz",
-                "checksum": "SHA-256:8bd55d901ef26f89a2e0e67551eb966de2b3bd90504d8204bd200510b85e1a9b",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "1.6.4+1.14-linux32.tar.gz",
-                "size": "224137"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.14-linux64.tar.gz",
-                "checksum": "SHA-256:2da8ac969f6e1731adfe0802d015891109b834fdedfa5ca199742d5439b4f038",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "1.6.4+1.14-linux64.tar.gz",
-                "size": "216542"
-              }
-            ]
-          },
-          {
-            "version": "1.6.4+1.18",
-            "name": "arduino101load",
-            "systems": [
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.19-windows.zip",
-                "checksum": "SHA-256:66c184ed5b045ba262ee86e17eb00280ebb6407b73b21979186ccc2270624bf7",
-                "host": "i686-mingw32",
-                "archiveFileName": "1.6.4+1.19-windows.zip",
-                "size": "9367650"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.18-osx.tar.gz",
-                "checksum": "SHA-256:c698ced53fe27030dfae9d198cc550357bf130ede204d6ccac5eaac8c15e159a",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "1.6.4+1.18-osx.tar.gz",
-                "size": "1236355"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.18-linux32.tar.gz",
-                "checksum": "SHA-256:96a9a3c9306b2ddcdecf96db64d7640c76422626a12488ef90ecd1ecdf451f3c",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "1.6.4+1.18-linux32.tar.gz",
-                "size": "1269508"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.4+1.18-linux64.tar.gz",
-                "checksum": "SHA-256:0e7a9c95a4b8ed9dbd9b3e2dcd00cb22c0f41a0090efe7f144cdf6fc94eb2a19",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "1.6.4+1.18-linux64.tar.gz",
-                "size": "1467166"
-              }
-            ]
-          },
-          {
-            "version": "1.6.9+1.24",
-            "name": "arduino101load",
-            "systems": [
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.24-windows.zip",
-                "checksum": "SHA-256:b531d93a8aa5dcb3e9338c553060f71835e6530639106e6976ca8d9dea0039b0",
-                "host": "i686-mingw32",
-                "archiveFileName": "arduino101load-1.6.9+1.24-windows.zip",
-                "size": "9418690"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.24-osx.tar.gz",
-                "checksum": "SHA-256:b927e7996f48d861d803b911317062b345fa631c4fbe2f85f2a0dcb651508e92",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "arduino101load-1.6.9+1.24-osx.tar.gz",
-                "size": "1241701"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.24-linux32.tar.gz",
-                "checksum": "SHA-256:db418197f6b4fbdc104b682fc4137cd955681af1d12147a663054e7f352a3785",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "arduino101load-1.6.9+1.24-linux32.tar.gz",
-                "size": "1305107"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.24-linux64.tar.gz",
-                "checksum": "SHA-256:b7723d8edac0ed957304dc2e275a5628f6602962b93863f32cc1986e1c2ee6ab",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "arduino101-1.6.9+1.24-linux64.tar.gz",
-                "size": "1507392"
-              }
-            ]
-          },
-          {
-            "version": "1.6.9+1.28",
-            "name": "arduino101load",
-            "systems": [
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.28-windows.zip",
-                "checksum": "SHA-256:0847ba5466ad97c4624c7b76c84aea036f24f1189828274310f52b86e6c3de1e",
-                "host": "i686-mingw32",
-                "archiveFileName": "arduino101load-1.6.9+1.28-windows.zip",
-                "size": "9331111"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.28-osx.tar.gz",
-                "checksum": "SHA-256:011fcb145728842aa6dc7a2332a12b7cd0d0e4f9eae7e9c35400d3727eb33db9",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "arduino101load-1.6.9+1.28-osx.tar.gz",
-                "size": "1134614"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.28-linux32.tar.gz",
-                "checksum": "SHA-256:36681f3dbe4edc04c0f6c3888ab7787c8015b0fce2d9cffccd17d7ec5fb1204d",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "arduino101load-1.6.9+1.28-linux32.tar.gz",
-                "size": "1202482"
-              },
-              {
-                "url": "https://github.com/01org/intel-arduino-tools/archive/1.6.9+1.28-linux64.tar.gz",
-                "checksum": "SHA-256:c691e2f077771b18a83b61c1cda96608150c80707adb7bac6b9665232bc74d4b",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "arduino101load-1.6.9+1.28-linux64.tar.gz",
-                "size": "1411007"
-              }
-            ]
-          },
-          {
-            "name": "arduino101load",
-            "version": "2.0.0",
-            "systems": [
-              {
-                "host": "i386-apple-darwin11",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.0-darwin_amd64.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.0-darwin_amd64.tar.bz2",
-                "size": "1115949",
-                "checksum": "SHA-256:1adc2bb7ae5c12dabd2ce62a281285557d85d694d88e3578176a26a892546bff"
-              },
-              {
-                "host": "arm-linux-gnueabihf",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.0-linux_arm.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.0-linux_arm.tar.bz2",
-                "size": "992362",
-                "checksum": "SHA-256:ce5bc6598481cbf058a86695f4661f4b9f3a37481a8a1401bc8aa6e38055c13f"
-              },
-              {
-                "host": "x86_64-linux-gnu",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.0-linux_amd64.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.0-linux_amd64.tar.bz2",
-                "size": "1111450",
-                "checksum": "SHA-256:70965f1830e97bb8eafe1a4cea59a202aeb7c08dd2e9f46eb6a658d382cbf3fe"
-              },
-              {
-                "host": "i686-linux-gnu",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.0-linux_386.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.0-linux_386.tar.bz2",
-                "size": "1002073",
-                "checksum": "SHA-256:3a0880cbfc795a94cbc90e8c5e6bcf3dc47b893be8b61ba8657f009fdec364a0"
-              },
-              {
-                "host": "i686-mingw32",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.0-windows_386.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.0-windows_386.tar.bz2",
-                "size": "1046285",
-                "checksum": "SHA-256:90923d95f3d30fe3161fa0fcac344db12f99e2bfba396a48bec596d1870370ce"
-              }
-            ]
-          },
-          {
-            "name": "arduino101load",
-            "version": "2.0.1",
-            "systems": [
-              {
-                "host": "i386-apple-darwin11",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.1-darwin_amd64.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.1-darwin_amd64.tar.bz2",
-                "size": "1114375",
-                "checksum": "SHA-256:1f96480028a2aaa9475a1f44c5912236b6a039fced948fe2042a0353c88c1fb0"
-              },
-              {
-                "host": "arm-linux-gnueabihf",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.1-linux_arm.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.1-linux_arm.tar.bz2",
-                "size": "992557",
-                "checksum": "SHA-256:ff02bc7b64dd2f6a526fd283c55b36cab15297d045ccd214ec70d12067ce0991"
-              },
-              {
-                "host": "x86_64-linux-gnu",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.1-linux_amd64.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.1-linux_amd64.tar.bz2",
-                "size": "1111519",
-                "checksum": "SHA-256:b15a213b495e599b76ecd68253602b56ff5eebda4fadc53442e8c1917964a45e"
-              },
-              {
-                "host": "i686-linux-gnu",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.1-linux_386.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.1-linux_386.tar.bz2",
-                "size": "1001211",
-                "checksum": "SHA-256:2941d1f2f726ca1dd3789a744a2084e8f9000912bdaf25ef888c90fd454057e9"
-              },
-              {
-                "host": "i686-mingw32",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.0.1-windows_386.tar.bz2",
-                "archiveFileName": "arduino101load-2.0.1-windows_386.tar.bz2",
-                "size": "1046214",
-                "checksum": "SHA-256:932373b6da9a8ad8ee9051937ea42cedde604fa8437050dcf7baa29564fc4547"
-              }
-            ]
-          },
-          {
-            "name": "arduino101load",
-            "version": "2.1.0",
-            "systems": [
-              {
-                "host": "i386-apple-darwin11",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.1.0-darwin_amd64.tar.bz2",
-                "archiveFileName": "arduino101load-2.1.0-darwin_amd64.tar.bz2",
-                "size": "1188264",
-                "checksum": "SHA-256:068310277e032df5e36bd7cf351680462bd14f667536baf0b46e0f98e88a5616"
-              },
-              {
-                "host": "arm-linux-gnueabihf",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.1.0-linux_arm.tar.bz2",
-                "archiveFileName": "arduino101load-2.1.0-linux_arm.tar.bz2",
-                "size": "1110912",
-                "checksum": "SHA-256:440c407d3fcca28333830891550bd4ed62ff4a6fb54a488330291bb79e737e97"
-              },
-              {
-                "host": "x86_64-linux-gnu",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.1.0-linux_amd64.tar.bz2",
-                "archiveFileName": "arduino101load-2.1.0-linux_amd64.tar.bz2",
-                "size": "1184509",
-                "checksum": "SHA-256:c86f707914c733f51d705b32d45ade9d708913f458382f30b7436bdcdc9bb514"
-              },
-              {
-                "host": "i686-linux-gnu",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.1.0-linux_386.tar.bz2",
-                "archiveFileName": "arduino101load-2.1.0-linux_386.tar.bz2",
-                "size": "1065618",
-                "checksum": "SHA-256:b17ce537f26e6ececf176585859594e1a66dfb788f074711d0be4a563c1815d8"
-              },
-              {
-                "host": "i686-mingw32",
-                "url": "http://downloads.arduino.cc/tools/arduino101load-2.1.0-windows_386.tar.bz2",
-                "archiveFileName": "arduino101load-2.1.0-windows_386.tar.bz2",
-                "size": "1078361",
-                "checksum": "SHA-256:32ff223937fbf747f1c552256627dfcb8eeccb4903342a9e8ac8b3e6d89cb4a7"
-              }
-            ]
-          },
-          {
-            "version": "0.9.0+0.1",
-            "name": "openocd",
-            "systems": [
-              {
-                "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-windows.zip",
-                "checksum": "SHA-256:95accfa22294cf150f33fba3cac45e6aa6857ebc2ba5dacebc2963b4a6021962",
-                "host": "i686-mingw32",
-                "archiveFileName": "openocd-windows-0.9.0.zip",
-                "size": "9181935"
-              },
-              {
-                "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-osx.tar.bz2",
-                "checksum": "SHA-256:57083e887ba77826a5f532f4b1ca4b7390cb7a2e2744583576a72f28a77dcc44",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "openocd-osx-0.9.0.tar.bz2",
-                "size": "896625"
-              },
-              {
-                "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-linux32.tar.bz2",
-                "checksum": "SHA-256:49d2a220e4b25eead4fe03d2ffa339ed946abef9cb718debdc7369f7b3c70534",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "openocd-linux32-0.9.0.tar.bz2",
-                "size": "3923308"
-              },
-              {
-                "url": "https://github.com/01org/OpenOCD/releases/download/0.9-0.1/openocd-linux64.tar.bz2",
-                "checksum": "SHA-256:4df6d3d387b45fa6214145f736c48c95109871fcd85fa81b81c01b533097a031",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "openocd-linux64-0.9.0.tar.bz2",
-                "size": "4010990"
-              }
-            ]
-          },
-          {
-            "version": "1.0.0",
-            "name": "flashpack",
-            "systems": [
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/1.0.7/arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "checksum": "SHA-256:6d4422cfa5c21ceba522ebf298bf24ebb2f57089e6bbaf6356038ef6fae6ca6d",
-                "host": "i686-mingw32",
-                "archiveFileName": "arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "size": "654391"
-              },
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/1.0.7/arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "checksum": "SHA-256:6d4422cfa5c21ceba522ebf298bf24ebb2f57089e6bbaf6356038ef6fae6ca6d",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "size": "654391"
-              },
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/1.0.7/arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "checksum": "SHA-256:6d4422cfa5c21ceba522ebf298bf24ebb2f57089e6bbaf6356038ef6fae6ca6d",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "size": "654391"
-              },
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/1.0.7/arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "checksum": "SHA-256:6d4422cfa5c21ceba522ebf298bf24ebb2f57089e6bbaf6356038ef6fae6ca6d",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "arduino101-factory_ble-flashpack-ide.tar.bz2",
-                "size": "654391"
-              }
-            ]
-          },
-          {
-          "version": "2.0.0",
-          "name": "flashpack",
+          "url": "https://github.com/sandeepmistry/arduino-nRF5/archive/0.4.0.tar.gz",
+          "archiveFileName": "arduino-nRF52-0.4.0.tar.gz",
+          "checksum": "MD5:E82DA39642AB48492A9FEDE8159871F5",
+          "size": "573440",
+          "boards": [
+            {"name": "BBC micro:bit"},
+            {"name": "Bluz DK"},
+            {"name": "Electronut labs bluey"},
+            {"name": "Generic nRF51822"},
+            {"name": "Generic nRF52823"},
+            {"name": "OSHChip"},
+            {"name": "ng-beacon"},
+            {"name": "nRF51 Dongle"},
+            {"name": "nRF51822 Development Kit"},
+            {"name": "nRF52 DK"},
+            {"name": "Nordic Beacon Kit"},
+            {"name": "RedBear BLE Nano 2"},
+            {"name": "RedBear Blend 2"},
+            {"name": "RedBearLab BLE Nano"},
+            {"name": "RedBearLab nRF51822"},
+            {"name": "Taida Century nRF52 mini board"},
+            {"name": "TinyBLE"},
+            {"name": "Waveshare BLE400"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "sandeepmistry",
+              "name": "gcc-arm-none-eabi",
+              "version": "5_2-2015q4"
+            },
+            {
+              "packager": "sandeepmistry",
+              "name": "openocd",
+              "version": "0.10.0-dev.nrf5"
+            }
+          ]
+        }
+      ],
+      "tools":[
+        {
+          "name": "gcc-arm-none-eabi",
+          "version": "5_2-2015q4",
           "systems": [
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
-                "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
-                "host": "i686-mingw32",
-                "archiveFileName": "flashpack_ble_v3.tar.bz2",
-                "size": "678394"
-              },
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
-                "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
-                "host": "i386-apple-darwin11",
-                "archiveFileName": "flashpack_ble_v3.tar.bz2",
-                "size": "678394"
-              },
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
-                "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
-                "host": "i686-linux-gnu",
-                "archiveFileName": "flashpack_ble_v3.tar.bz2",
-                "size": "678394"
-              },
-              {
-                "url": "https://github.com/01org/corelibs-arduino101/releases/download/2.0.0/flashpack_ble_v3.tar.bz2",
-                "checksum": "SHA-256:d5c9dfacfa4a12580d8853db32c194537aa920f43564e99aee42f069590cce3e",
-                "host": "x86_64-linux-gnu",
-                "archiveFileName": "flashpack_ble_v3.tar.bz2",
-                "size": "678394"
-              }
-            ]
-          }
-        ]
-      }
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-mac.tar.bz2",
+              "size": "96372129",
+              "checksum": "MD5:603bcce8e59683ac27054b3197a53254"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "size": "92811866",
+              "checksum": "MD5:f88caac80b4444a17344f57ccb760b90"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2",
+              "size": "92811866",
+              "checksum": "MD5:f88caac80b4444a17344f57ccb760b90"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2",
+              "archiveFileName": "gcc-arm-none-eabi-5_2-2015q4-20151219-win32.tar.bz2",
+              "size": "102981732",
+              "checksum": "MD5:32d950225b6c7c886f6225c1fc578934"
+            }
+          ]
+        },
+        {
+          "name": "openocd",
+          "version": "0.10.0-dev.nrf5",
+          "systems": [
+            {
+              "host": "i386-apple-darwin11",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-osx-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-osx-0.10.0-dev-nrf5.tar.gz",
+              "size": "1345243",
+              "checksum": "MD5:3ffaa4e7cd4b96770eec65002c5959e3"
+            },
+            {
+              "host": "i686-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "size": "3585042",
+              "checksum": "MD5:02b3f4a3004cae86631bf13837c84504"
+            },
+            {
+              "host": "x86_64-pc-linux-gnu",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-linux32-0.10.0-dev-nrf5.tar.gz",
+              "size": "3585042",
+              "checksum": "MD5:02b3f4a3004cae86631bf13837c84504"
+            },
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/sandeepmistry/arduino-nRF5/releases/download/tools/openocd-win32-0.10.0-dev-nrf5.tar.gz",
+              "archiveFileName": "openocd-win32-0.10.0-dev-nrf5.tar.gz",
+              "size": "5498373",
+              "checksum": "MD5:3acd3b08afda2bb09e75a0de5ac7c3cd"
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
